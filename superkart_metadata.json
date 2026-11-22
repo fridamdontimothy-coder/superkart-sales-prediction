@@ -1,0 +1,32 @@
+{
+  "features": [
+    "Product_Weight",
+    "Product_Sugar_Content",
+    "Product_Allocated_Area",
+    "Product_MRP",
+    "Store_Size",
+    "Store_Location_City_Type",
+    "Store_Type",
+    "Product_Id_char",
+    "Store_Age_Years",
+    "Product_Type_Category"
+  ],
+  "best_model": "Tuned Random Forest",
+  "reference_year": 2025,
+  "perishable_types": [
+    "Breads",
+    "Breakfast",
+    "Dairy",
+    "Frozen Foods",
+    "Fruits and Vegetables",
+    "Meat",
+    "Seafood"
+  ],
+  "best_params": {
+    "model__n_estimators": 100,
+    "model__min_samples_leaf": 2,
+    "model__max_features": 0.7,
+    "model__max_depth": 22
+  },
+  "caveat": "No time-indexed quarterly data; these are product-store sales predictions, not validated future-quarter forecasts."
+}
